@@ -28,7 +28,7 @@ var mainState = {
 
         this.bird = game.add.sprite(100, 245, 'bird');
         game.physics.arcade.enable(this.bird);
-        this.bird.body.gravity.y = 1000; 
+        this.bird.body.gravity.y = 1500; 
 
         // New anchor position
         this.bird.anchor.setTo(-0.2, 0.5); 
@@ -42,7 +42,7 @@ var mainState = {
 
         // Add the jump sound
         this.jumpSound = game.add.audio('jump');
-        this.jumpSound.volume = 0.2;
+        this.jumpSound.volume = 0.5;
     },
 
     update: function() {
